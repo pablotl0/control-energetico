@@ -31,7 +31,9 @@
 - **Alertas personalizadas**: Código para configuar alertas automáticas basadas en niveles de contaminación y reciban notificaciones cuando dichos niveles se superen.
   
 **Criterios de viabilidad**:
-- Los usuarios deben poder ver claramente la calidad del aire y recibir alertas en sus dispositivos móviles cuando los niveles de contaminación excedan los umbrales configurados.
+- La interfaz debe mostrar la calidad del aire en un formato comprensible, utilizando un esquema que siga estándares conocidos. 
+- Los usuarios deben poder configurar umbrales personalizados para las alertas. 
+- Los usuarios deben recibir alertas superen esos umbrales. 
 
 
 #### [M3] Milestone 3: **Comparación de datos y generación de informes**
