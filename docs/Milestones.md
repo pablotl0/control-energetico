@@ -6,8 +6,8 @@
 - Código que implemente el modelo conceptual con las entidades del problema y las relaciones entre estas entidades.
 
 **Criterios de validez**:
-- Incluye las entidades del dominio y sus relaciones en el código.
-- La documentación debe ser comprensible y debe permitir a un nuevo desarrollador implementar el modelo en un entorno de trabajo sin confusiones.
+- Incluye las entidades del dominio y sus relaciones en el código, asociadas a la información de las historias de usuario.
+- Se realiza una prueba básica que valide la creación de las entidades y sus relaciones en el entorno de desarrollo.
 
 #### [M1] Milestone 1: **Implementación de consolidación de datos y visualización básica**
 
