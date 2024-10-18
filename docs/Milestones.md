@@ -39,8 +39,8 @@
 #### [M3] Milestone 3: **Comparación de datos y generación de informes**
 
 **Producto**:
-- **Comparación de datos entre ciudades o regiones (HU3)**: Desarrollar un mapa interactivo que permita comparar los datos ambientales entre diferentes localidades y regiones en España.
-- **Generación de informes**: Crear la funcionalidad para generar informes automáticos con datos agregados y tendencias comparativas en periodos de tiempo mensuales y anuales. Los informes deben poder descargarse en formatos como PDF, CSV o Excel.
+- **Comparación de datos entre ciudades o regiones (HU3)**: Desarrollar un mapa interactivo que permita comparar los datos ambientales entre diferentes localidades y regiones en España, pudiendo seleccionar periodos de tiempo y observar tendencias en los datos.
+- **Generación de informes**: Código para generar informes automáticos con datos agregados y tendencias comparativas en periodos de tiempo mensuales y anuales, en formatos como PDF, CSV o Excel.
   
 **Criterios de viabilidad**:
 - Los usuarios, como Mariano, deben poder visualizar y comparar datos ambientales entre diferentes ciudades o regiones en el mapa interactivo.
