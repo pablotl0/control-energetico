@@ -27,8 +27,8 @@
 #### [M2] Milestone 2: **Interfaz optimizada y alertas personalizadas**
 
 **Producto**:
-- **Visualización de calidad del aire (HU2)**: Implementar una interfaz visual clara donde los ciudadanos, como María, puedan ver la calidad del aire en su área local mediante colores o íconos que representen los niveles de contaminación.
-- **Alertas personalizadas**: Permitir que los usuarios configuren alertas automáticas basadas en niveles de contaminación configurables y reciban notificaciones cuando dichos niveles se superen.
+- **Visualización de calidad del aire (HU2)**: Código para una interfaz visual clara donde los ciudadanos, como María, puedan ver la calidad del aire en su área local mediante colores o íconos que representen los niveles de contaminación, según estándares de calidad del aire (por ejemplo, el índice AQI).
+- **Alertas personalizadas**: Código para configuar alertas automáticas basadas en niveles de contaminación y reciban notificaciones cuando dichos niveles se superen.
   
 **Criterios de viabilidad**:
 - Los usuarios deben poder ver claramente la calidad del aire y recibir alertas en sus dispositivos móviles cuando los niveles de contaminación excedan los umbrales configurados.
