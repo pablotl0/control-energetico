@@ -5,16 +5,16 @@
 **Producto**:  
 - Código que implemente el modelo conceptual con las entidades del problema y las relaciones entre estas entidades.
 
-**Criterios de validez**:
+**Criterios de viabilidad**:
 - Incluye las entidades del dominio y sus relaciones en el código, asociadas a la información de las historias de usuario.
 - Se realiza una prueba básica que valide la creación de las entidades y sus relaciones en el entorno de desarrollo.
 
 #### [M1] Milestone 1: **Implementación de consolidación de datos y visualización básica**
 
 **Producto**:
-- **Consolidación de datos (HU1)**: Implementar la capacidad de acceder a múltiples fuentes de datos ambientales en tiempo real y consolidarlos en la plataforma para que los investigadores puedan consultarlos de manera centralizada.
-- **Visualización básica**: Crear un tablero interactivo que muestre los datos ambientales en tiempo real de manera accesible.
-- **Exportación de datos**: Añadir la funcionalidad para que los usuarios descarguen estos datos en formatos CSV, Excel o JSON.
+- **Consolidación de datos (HU1)**: Código que consolide datos ambientales de múltiples fuentes. Estos datos deben ser accesibles y centralizados en la plataforma para ser consultados en tiempo real.
+- **Visualización básica**: Código para un tablero interactivo que muestre los datos ambientales en tiempo real, donde filtrar los datos por tipo (e.g., temperatura), fecha y región.
+- **Exportación de datos**: Código para exportar los datos consolidados en formatos CSV, Excel o JSON.
   
 **Criterios de viabilidad**:
 - Los usuarios deben poder ver datos de varias fuentes consolidadas en una única plataforma en tiempo real.
