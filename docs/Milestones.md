@@ -17,8 +17,10 @@
 - **Exportación de datos**: Código para exportar los datos consolidados en formatos CSV, Excel o JSON.
   
 **Criterios de viabilidad**:
-- Los usuarios deben poder ver datos de varias fuentes consolidadas en una única plataforma en tiempo real.
-- Las pruebas funcionales deben validar que los datos se integran y visualizan correctamente y que los usuarios pueden descargar los datos en los formatos especificados.
+- Los datos de diferentes fuentes deben consolidarse correctamente y mostrarse en un único punto de acceso. 
+- El tablero debe permitir a los usuarios visualizar datos en tiempo real.
+- Los filtros deben poder seleccionar regiones, periodos de tiempo y tipo de dato.
+- Los datos deben poder exportarse sin errores en los formatos CSV, Excel y JSON.
 
 ---
 
