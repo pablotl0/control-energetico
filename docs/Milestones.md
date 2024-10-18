@@ -3,7 +3,7 @@
 #### [M0] Milestone 0: **Diseño del modelo conceptual y viabilidad técnica**
 
 **Producto**:  
-- Código con las entidades del problema (estaciones meteorológicas, calidad del aire, factores ambientales), las características de cada entidad, como la temperatura o precipitaciones para los factores ambientales, y las relaciones entre estas entidades.
+- Código que implemente el modelo conceptual con las entidades del problema y las relaciones entre estas entidades.
 
 **Criterios de validez**:
 - Incluye las entidades del dominio y sus relaciones en el código.
