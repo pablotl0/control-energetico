@@ -43,6 +43,7 @@
 - **Generación de informes**: Código para generar informes automáticos con datos agregados y tendencias comparativas en periodos de tiempo mensuales y anuales, en formatos como PDF, CSV o Excel.
   
 **Criterios de viabilidad**:
-- Los usuarios, como Mariano, deben poder visualizar y comparar datos ambientales entre diferentes ciudades o regiones en el mapa interactivo.
-- Los informes generados deben ser precisos y descargables en los formatos especificados, con tendencias y datos agregados que permitan análisis más profundos.
+- Los usuarios deben poder visualizar y comparar datos ambientales entre diferentes ciudades o regiones en el mapa interactivo.
+- Se deben visualizar datos agregados y tendencias en mapas e informes.
+- Los informes generados deben ser precisos y descargables en los formatos especificados.
 
