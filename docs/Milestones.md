@@ -6,7 +6,7 @@
 - Código que implemente el modelo conceptual con las entidades del problema, asociado a las necesidades de la HU001 con la gestión de los datos ambientales, y las relaciones entre estas entidades. 
 
 **Criterios de viabilidad**:
-- Incluye las entidades del dominio y sus relaciones en el código, asociadas a la información de las historias de usuario.
+- Incluye las entidades del dominio y sus relaciones en el código, asociadas a la información de la HU001.
 - Se realiza una prueba básica que valide la creación de las entidades y sus relaciones en el entorno de desarrollo.
 
 #### [M1] Milestone 1: **Módulo de Consolidación de Datos y Visualización Básica**
