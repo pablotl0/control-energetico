@@ -9,7 +9,7 @@
 - Incluye las entidades del dominio y sus relaciones en el código, asociadas a la información de las historias de usuario.
 - Se realiza una prueba básica que valide la creación de las entidades y sus relaciones en el entorno de desarrollo.
 
-#### [M1] Milestone 1: **Implementación de consolidación de datos y visualización básica**
+#### [M1] Milestone 1: **Módulo de Consolidación de Datos y Visualización Básica**
 
 **Producto**:
 - **Consolidación de datos (HU1)**: Código que consolide datos ambientales de múltiples fuentes. Estos datos deben ser accesibles y centralizados en la plataforma para ser consultados en tiempo real.
