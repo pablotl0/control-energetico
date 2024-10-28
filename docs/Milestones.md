@@ -3,7 +3,8 @@
 #### [M0] Milestone 0: **Diseño del modelo conceptual**
 
 **Producto**:  
-- Código que implemente el modelo conceptual con las entidades del problema, asociado a las necesidades de la HU001 con la gestión de los datos ambientales, y las relaciones entre estas entidades. 
+- Código que implementa las entidades relacionadas con el problema y sus relaciones, alineado con los necesidades de la HU001.
+
 
 **Criterios de viabilidad**:
 - Incluye las entidades del dominio y sus relaciones en el código, asociadas a la información de la HU001.
