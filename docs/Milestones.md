@@ -7,7 +7,7 @@
 
 
 **Criterios de viabilidad**:
-- Incluye las entidades del dominio y sus relaciones en el código, asociadas a la información de la HU001.
+- El código incluye los párametros ambientales y las estaciones de medición mediante clases, atributos y relaciones apropiadas.
 - Se realiza una prueba básica que valide la creación de las entidades y sus relaciones en el entorno de desarrollo.
 
 #### [M1] Milestone 1: **Módulo de Consolidación de Datos y Visualización Básica**
