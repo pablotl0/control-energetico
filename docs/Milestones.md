@@ -43,4 +43,11 @@
 - Los datos se deben mostrar por periodos de tiempo.
 - Se realiza una prueba básica que valide las visualizacion de los datos y en periodos de tiempo.
 
+#### Milestones adicional: **Generación de informes**
 
+**Producto**:
+- Código para generar informes automáticos con datos agregados y tendencias comparativas en algun formato como PDF, CSV o Excel.
+
+**Criterios de viabilidad**:
+- Se deben visualizar datos agregados y tendencias en mapas e informes.
+- Los informes generados deben ser precisos y descargables en los formatos especificados.
