@@ -10,18 +10,15 @@
 - El código incluye los párametros ambientales y las estaciones de medición mediante clases, atributos y relaciones apropiadas.
 - Se realiza una prueba básica que valide la creación de las entidades y sus relaciones en el entorno de desarrollo.
 
-#### [M1] Milestone 1: **Módulo de Consolidación de Datos y Visualización Básica**
+#### [M1] Milestone 1: **Recolección y organización de datos**
 
 **Producto**:
-- **Consolidación de datos (HU1)**: Código que consolide datos ambientales de múltiples fuentes. Estos datos deben ser accesibles y centralizados en la plataforma para ser consultados en tiempo real.
-- **Visualización básica**: Código para un tablero interactivo que muestre los datos ambientales en tiempo real, donde filtrar los datos por tipo (e.g., temperatura), fecha y región.
-- **Exportación de datos**: Código para exportar los datos consolidados en formatos CSV, Excel o JSON.
-  
+- Código que extrae y recopila los datos ambientales desde las fuentes indicadas en (./Formato-datos.md), transformándolos a un formato común y estructurándolos de manera que facilite la consulta.
+
 **Criterios de viabilidad**:
-- Los datos de diferentes fuentes deben consolidarse correctamente y mostrarse en un único punto de acceso. 
-- El tablero debe permitir a los usuarios visualizar datos en tiempo real.
-- Los filtros deben poder seleccionar regiones, periodos de tiempo y tipo de dato.
-- Los datos deben poder exportarse sin errores en los formatos CSV, Excel y JSON.
+- El código implementa un proceso que permite la recolección de datos desde diversas fuentes, integrándolos y convirtiéndolos a un formato común.
+- Se verifica que los datos recopilados están organizados de acuerdo con la estructura definida en el modelo conceptual
+- Se realiza una prueba básica que valide la correcta integración y estructuración de los datos.
 
 ---
 
