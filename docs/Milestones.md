@@ -33,14 +33,14 @@
 - Se realiza una prueba básica que valide las consultas de los datos y su filtrado.
 
 
-#### [M3] Milestone 3: **Comparación de datos y generación de informes**
+#### [M3] Milestone 3: **Visualización de datos**
 
 **Producto**:
-- **Comparación de datos entre ciudades o regiones (HU3)**: Desarrollar un mapa interactivo que permita comparar los datos ambientales entre diferentes localidades y regiones en España, pudiendo seleccionar periodos de tiempo y observar tendencias en los datos.
-- **Generación de informes**: Código para generar informes automáticos con datos agregados y tendencias comparativas en periodos de tiempo mensuales y anuales, en formatos como PDF, CSV o Excel.
-  
+- Código que permita visualizar los datos ambientales en diferentes localidades y regiones en España en periodos de tiempo específicos. La interfaz debe presentar la información de forma organizada y accesible, facilitando el análisis.
+
 **Criterios de viabilidad**:
-- Los usuarios deben poder visualizar y comparar datos ambientales entre diferentes ciudades o regiones en el mapa interactivo.
-- Se deben visualizar datos agregados y tendencias en mapas e informes.
-- Los informes generados deben ser precisos y descargables en los formatos especificados.
+- Los usuarios deben poder visualizar en diferentes ciudades o regiones mediante la interfaz.
+- Los datos se deben mostrar por periodos de tiempo.
+- Se realiza una prueba básica que valide las visualizacion de los datos y en periodos de tiempo.
+
 
