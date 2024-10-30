@@ -4,8 +4,8 @@
 ### [HU1] Juan José, Investigador ambiental
 
 **Descripción**:  
-Como investigador ambiental, quiero acceder a una única plataforma que me permita consultar, ver y descargar datos fiables de varias fuentes en tiempo real, para agilizar mi proceso de análisis.
-La plataforma debe integrar datos de **calidad del aire** (PM2.5, PM10, NO2, O3) y de otros parámetros ambientales como **temperatura**, **humedad**, **precipitación**, **radiación UV**, y **niveles de CO2**, asociados cada parámetro con la estación de medición. Permitiendome filtrar datos por variables ambientales y región para poder visualizarlos. 
+Como investigador ambiental, quiero acceder a una única plataforma que me permita consultar y descargar datos fiables de varias fuentes en tiempo real, para agilizar mi proceso de análisis.
+La plataforma debe integrar datos de **calidad del aire** (PM2.5, PM10, NO2, O3) y de otros parámetros ambientales como **temperatura**, **humedad**, **precipitación**, **radiación UV**, y **niveles de CO2**, asociados cada parámetro con la estación de medición. Permitiendome filtrar datos por variables ambientales y región.
 Los datos deben estar disponibles en **tiempo real** o en intervalos actualizados según la fuente. También necesito poder descargar los datos en **formatos como CSV, Excel o JSON** para facilitar el análisis posterior. 
 
 ### [HU2] María, ciudadana con enfermedades respiratorias
