@@ -3,21 +3,17 @@
 
 ### [HU1] Juan José, Investigador ambiental
 
-**Descripción**:  
-Como investigador ambiental, quiero acceder a una única plataforma que me permita consultar y descargar datos fiables de varias fuentes en tiempo real, para agilizar mi proceso de análisis.
-La plataforma debe integrar datos de **calidad del aire** (PM2.5, PM10, NO2, O3) y de otros parámetros ambientales como **temperatura**, **humedad**, **precipitación**, **radiación UV**, y **niveles de CO2**, asociados cada parámetro con la estación de medición. Permitiendome filtrar datos por variables ambientales y región.
-Los datos deben estar disponibles en **tiempo real** o en intervalos actualizados según la fuente. También necesito poder descargar los datos en **formatos como CSV, Excel o JSON** para facilitar el análisis posterior. 
+**Descripción**:
+Soy Juan José, un investigador ambiental que trabaja en proyectos relacionados con la calidad del aire en España. Mi principal dificultad es que los datos que necesito están dispersos en múltiples fuentes: estaciones de medición, informes gubernamentales y bases de datos de investigación. Esto hace que mi trabajo sea lento y tedioso, ya que debo buscar en diferentes sitios web y archivos, lo que consume un tiempo valioso. Además, los datos que encuentro a menudo están en formatos inconsistentes, como PDF y Excel, lo que me obliga a transformarlos manualmente para analizarlos. Esta falta de uniformidad y centralización impide que pueda realizar análisis precisos y rápidos, limitando la efectividad de mi investigación.
+
 
 ### [HU2] María, ciudadana con enfermedades respiratorias
 
-**Descripción**:  
-Como ciudadana con problemas respiratorios, quiero consultar de manera sencilla y clara la calidad del aire para saber si es seguro salir de casa. Necesito que la plataforma me muestre la **calidad del aire** (PM2.5, PM10, NO2) de manera comprensible, a través de **colores** o **íconos** que indiquen si la situación es **buena, moderada o mala**. 
-La información debe ser fácil de consultar, y quiero que el sistema me envíe **alertas automáticas** cuando los niveles de contaminación superen los límites que yo configure. Me interesa principalmente conocer los datos de mi **zona local**, pero también debería ser posible ampliar el área de consulta a otras ciudades **españolas** si lo necesito.
+**Descripción**:
+Soy María, una ciudadana con problemas respiratorios que vive en una ciudad donde la calidad del aire es un tema crítico. Una de mis mayores preocupaciones es saber si es seguro salir de casa, ya que la contaminación puede agravar mi salud. Sin embargo, la información sobre la calidad del aire es a menudo confusa y difícil de interpretar, ya que la encuentro en diferentes plataformas y formatos. Me gustaría tener acceso a una herramienta que me muestre la calidad del aire en mi ciudad de forma clara y visual. También necesito recibir alertas automáticas cuando los niveles de contaminación sean perjudiciales para mi salud, para poder tomar decisiones informadas sobre cuándo salir o quedarme en casa.
 
 
 ### [HU3] Mariano, Diputado de la Comunidad Autónoma
 
 **Descripción**:  
-Como diputado de una comunidad autónoma, quiero consultar un **mapa interactivo** que me permita seleccionar una ciudad o region y pueda visualizar los **niveles de contaminación** (PM2.5, PM10, NO2) y otros datos como **temperatura**, **viento**, y **precipitación** en diferentes ciudades de España a lo largo del año.
-
-Además, deseo generar **informes** en formatos descargables como **PDF, CSV o Excel**, con datos agregados y tendencias de las variables medioambientales, para presentar estos resultados en reuniones gubernamentales o de planificación.
+Soy Mariano, un diputado de la comunidad autónoma que necesita evaluar el impacto de las políticas ambientales en mi región. Mi principal desafío es que no tengo acceso fácil a datos actualizados y comprensibles sobre la calidad del aire y los datos climatológicos. Esto dificulta mi capacidad para analizar tendencias y formular recomendaciones adecuadas. Necesito una plataforma que me ofrezca reportes y gráficos que faciliten la visualización de la información, permitiéndome obtener resúmenes mensuales o anuales. Sin esta herramienta, me resulta complicado evaluar si las políticas actuales están funcionando y qué cambios podrían ser necesarios para mejorar la calidad del aire en mi comunidad.
