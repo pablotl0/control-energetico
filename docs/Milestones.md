@@ -3,7 +3,7 @@
 #### [M0] Milestone 0: **Diseño del modelo conceptual**
 
 **Producto**:  
-- Código que implementa las entidades relacionadas con el problema y sus relaciones, alineado con los necesidades de la HU001.
+- Código que implementa las clases con el objetivo de estrucuturar y extraer la información sobre las mediciones de calidad del aire dispersa en múltiples fuentes y formatos.
 
 
 **Criterios de viabilidad**:
