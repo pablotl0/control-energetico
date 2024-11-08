@@ -14,5 +14,4 @@
 - Código que represente la lógica de negocio del problema descrito en la [HU001] (https://github.com/pablotl0/EnviroTrack/issues/2) .
 
 **Criterios de viabilidad**:
-- El código que represente la lógica de negocio del problema descrito en la [HU001] (https://github.com/pablotl0/EnviroTrack/issues/2) .
-
+- La lógica de negocio descrita en la [HU001] (https://github.com/pablotl0/EnviroTrack/issues/2) será validada mediante test automáticos. 

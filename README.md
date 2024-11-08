@@ -21,11 +21,7 @@ El proyecto se centrará en organizar y dar accesibilidad a información contras
 ## Documentación adicional
 La documentación adicional se encuentra en el directorio [`/docs`](./docs/ob0/README.md).
 
-[User journeys](./docs/User-journeys.md)
-
 [User stories](./docs/User-stories.md)
 
 [Milestones](./docs/Milestones.md)
-
-[Formato de los datos ambientales](./docs/Formato-datos.md)
 
