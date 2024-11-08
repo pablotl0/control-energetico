@@ -19,7 +19,9 @@ Para los urbanistas, así como responsables de políticas públicas es un incove
 El proyecto se centrará en organizar y dar accesibilidad a información contrastada ,mejorando la toma de decisiones y el bienestar público.
 
 ## Documentación adicional
-La documentación adicional se encuentra en el directorio [`/docs`](./docs/README.md).
+La documentación adicional se encuentra en el directorio [`/docs`](./docs/ob0/README.md).
 
+[User stories](./docs/User-stories.md)
 
+[Milestones](./docs/Milestones.md)
 
