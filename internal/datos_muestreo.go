@@ -10,12 +10,12 @@ import (
 type DatosHorario struct {
 	Fecha         time.Time
 	Hora          int
-	Contaminantes map[string]Contaminante // Para poder saber qué contaminante es
+	Contaminantes map[string]Contaminante // Contaminantes mapea la magnitud del contaminante con su información detallada.
 }
 
 type DatosDiario struct {
 	Fecha         time.Time
-	Contaminantes map[string]Contaminante
+	Contaminantes map[string]Contaminante 
 }
 
 type DatosIrregular struct {
@@ -25,13 +25,17 @@ type DatosIrregular struct {
 }
 
 // Rango de fechas válido
+// fechaMinima y fechaMaxima se usan para garantizar que las fechas
+// ingresadas sean razonables para datos de calidad del aire. Las mediciones
+// suelen ser recientes y no deberían incluir fechas como el año 67.
 var (
-	fechaMinima = time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC) // Desde el año 2000
+	fechaMinima = time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC) // Primer año razonable de medición
 	fechaMaxima = time.Now().Add(time.Hour)                   // Hasta 1 hora después del momento actual
 )
 
 // Constructor para DatosHorario
 func NewDatosHorario(fecha time.Time, hora int, contaminantes []Contaminante) (DatosHorario, error) {
+	// Validar rango de fechas razonable
 	if fecha.Before(fechaMinima) || fecha.After(fechaMaxima) {
 		return DatosHorario{}, errors.New("la fecha debe estar entre el año 2000 y el presente")
 	}
@@ -58,6 +62,7 @@ func NewDatosHorario(fecha time.Time, hora int, contaminantes []Contaminante) (D
 
 // Constructor para DatosDiario
 func NewDatosDiario(fecha time.Time, contaminantes []Contaminante) (DatosDiario, error) {
+	// Validar rango de fechas razonable
 	if fecha.Before(fechaMinima) || fecha.After(fechaMaxima) {
 		return DatosDiario{}, errors.New("la fecha debe estar entre el año 2000 y el presente")
 	}
@@ -80,7 +85,8 @@ func NewDatosDiario(fecha time.Time, contaminantes []Contaminante) (DatosDiario,
 }
 
 // Constructor para DatosIrregular
-func NewDatosIrregular(fechaInicial, fechaFinal time.Time, contaminantes []Contaminante) (DatosIrregular, error) {
+func NewDatosIrregular(fechaInicial, fechaFinal time.Time, contaminantes []Contaminante) (DatosIrregular, error) {	
+	// Validar rango de fechas razonable
 	if fechaInicial.Before(fechaMinima) || fechaFinal.After(fechaMaxima) {
 		return DatosIrregular{}, errors.New("las fechas deben estar entre el año 2000 y el presente")
 	}
