@@ -13,17 +13,16 @@ type DatosCalidadAire struct {
 	DatosHorario       []DatosHorario
 	DatosDiario        []DatosDiario
 	DatosIrregular     []DatosIrregular
-	Fuente             FuenteDatos
 }
 
 
 // Constructor para DatosCalidadAire
-func NewDatosCalidadAire(ubicacion Ubicacion, frecuenciaMuestreo string, datosHorario []DatosHorario, datosDiario []DatosDiario, datosIrregular []DatosIrregular, fuente FuenteDatos) (DatosCalidadAire, error) {
+func NewDatosCalidadAire(ubicacion Ubicacion, frecuenciaMuestreo string, datosHorario []DatosHorario, datosDiario []DatosDiario, datosIrregular []DatosIrregular) (DatosCalidadAire, error) {
 	if frecuenciaMuestreo == "" {
 		return DatosCalidadAire{}, errors.New("frecuenciaMuestreo son obligatorios")
 	}
 	if len(datosHorario) == 0 && len(datosDiario) == 0 && len(datosIrregular) == 0 {
 		return DatosCalidadAire{}, errors.New("debe haber al menos un tipo de datos de muestreo")
 	}
-	return DatosCalidadAire{Ubicacion: ubicacion, FrecuenciaMuestreo: frecuenciaMuestreo, DatosHorario: datosHorario, DatosDiario: datosDiario, DatosIrregular: datosIrregular, Fuente: fuente}, nil
+	return DatosCalidadAire{Ubicacion: ubicacion, FrecuenciaMuestreo: frecuenciaMuestreo, DatosHorario: datosHorario, DatosDiario: datosDiario, DatosIrregular: datosIrregular}, nil
 }
