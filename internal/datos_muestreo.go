@@ -19,6 +19,9 @@ var (
 
 // Constructor para MuestraCalidadAire
 func NewMuestraCalidadAire(fechaInicial time.Time, contaminantes []Contaminante) (MuestraCalidadAire, error) {
+	// Truncar la fecha inicial a solo día, mes y año (hora 00:00:00)
+	fechaInicial = time.Date(fechaInicial.Year(), fechaInicial.Month(), fechaInicial.Day(), 0, 0, 0, 0, time.UTC)
+
 	// Validar rango de fechas
 	if fechaInicial.Before(fechaMinima) || fechaInicial.After(fechaMaxima) {
 		return MuestraCalidadAire{}, errors.New("la fecha inicial debe estar entre el año 2000 y el presente")
