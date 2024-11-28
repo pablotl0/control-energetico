@@ -6,17 +6,17 @@ import (
 )
 
 type GestorCalidadAire struct {
-	id                string                
-	datosCalidadAire  []DatosCalidadAire    
+	provincia         string                    
+	datosCalidadAire  map[string][]DatosCalidadAire   
 	
 }
 
-func NewGestorCalidadAire(id string) (GestorCalidadAire, error) {
-	if id == "" {
-		return GestorCalidadAire{}, errors.New("el gestor debe tener un identificador único")
+func NewGestorCalidadAire(provincia string) (GestorCalidadAire, error) {
+	if provincia == "" {
+		return GestorCalidadAire{}, errors.New("el nombre de la provincia es obligatorio")
 	}
 	return GestorCalidadAire{
-		id:               id,
-		datosCalidadAire: []DatosCalidadAire{},
+		provincia:        provincia,
+		datosCalidadAire: make(map[string][]DatosCalidadAire), 
 	}, nil
 }
