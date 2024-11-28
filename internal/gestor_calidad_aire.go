@@ -2,7 +2,6 @@ package internal
 
 import (
 	"errors"
-	"time"
 )
 
 type GestorCalidadAire struct {
@@ -11,12 +10,23 @@ type GestorCalidadAire struct {
 	
 }
 
-func NewGestorCalidadAire(provincia string) (GestorCalidadAire, error) {
+func NewGestorCalidadAire(provincia string, datosCalidadAire []DatosCalidadAire) (GestorCalidadAire, error) {
 	if provincia == "" {
 		return GestorCalidadAire{}, errors.New("el nombre de la provincia es obligatorio")
 	}
-	return GestorCalidadAire{
+
+	for _, datos := range datosCalidadAire {
+		if datos.Ubicacion.Provincia != provincia {
+			return GestorCalidadAire{}, errors.New("la provincia de los datos no coincide con la provincia del gestor")
+		}
+	}
+
+	gestor := GestorCalidadAire{
 		provincia:        provincia,
-		datosCalidadAire: make(map[string][]DatosCalidadAire), 
-	}, nil
+		datosCalidadAire: make(map[string][]DatosCalidadAire),
+	}
+
+	gestor.datosCalidadAire[provincia] = append(gestor.datosCalidadAire[provincia], datosCalidadAire...)
+
+	return gestor, nil
 }
