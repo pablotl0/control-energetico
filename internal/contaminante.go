@@ -1,21 +1,35 @@
-package internal
+	package internal
 
-import (
-	"errors"
-)
+	import (
+		"errors"
+	)
 
-type Contaminante struct {
-	Magnitud      string
-	Concentracion float64
-	Unidad        string
-}
-
-func NewContaminante(magnitud string, concentracion float64, unidad string) (Contaminante, error) {
-	if magnitud == "" || unidad == "" {
-		return Contaminante{}, errors.New("magnitud y unidad son obligatorios")
+	type MagnitudUnidad struct {
+		Magnitud string
+		Unidad   string
 	}
-	if concentracion < 0 {
-		return Contaminante{}, errors.New("la concentración no puede ser negativa")
+
+	func NewMagnitudUnidad(magnitud, unidad string) (MagnitudUnidad, error) {
+		if magnitud == "" || unidad == "" {
+			return MagnitudUnidad{}, errors.New("magnitud y unidad son obligatorios")
+		}
+		return MagnitudUnidad{Magnitud: magnitud, Unidad: unidad}, nil
 	}
-	return Contaminante{Magnitud: magnitud, Concentracion: concentracion, Unidad: unidad}, nil
-}
+
+	type Contaminante struct {
+		MagnitudUnidad MagnitudUnidad
+		Concentracion  float64
+	}
+
+	func NewContaminante(magnitud, unidad string, concentracion float64) (Contaminante, error) {
+		if concentracion < 0 {
+			return Contaminante{}, errors.New("la concentración no puede ser negativa")
+		}
+
+		mu, err := NewMagnitudUnidad(magnitud, unidad)
+		if err != nil {
+			return Contaminante{}, err
+		}
+
+		return Contaminante{MagnitudUnidad: mu, Concentracion: concentracion}, nil
+	}

@@ -29,13 +29,13 @@ func NewMuestraCalidadAire(fechaInicial time.Time, contaminantes []Contaminante)
 
 	contaminantesMap := make(map[string]Contaminante)
 	for _, contaminante := range contaminantes {
-		if contaminante.Magnitud == "" {
+		if contaminante.MagnitudUnidad.Magnitud == "" {
 			return MuestraCalidadAire{}, errors.New("cada contaminante debe tener una magnitud")
 		}
-		if _, exists := contaminantesMap[contaminante.Magnitud]; exists {
+		if _, exists := contaminantesMap[contaminante.MagnitudUnidad.Magnitud]; exists {
 			return MuestraCalidadAire{}, errors.New("no se pueden duplicar magnitudes en los contaminantes")
 		}
-		contaminantesMap[contaminante.Magnitud] = contaminante
+		contaminantesMap[contaminante.MagnitudUnidad.Magnitud] = contaminante
 	}
 
 	return MuestraCalidadAire{
