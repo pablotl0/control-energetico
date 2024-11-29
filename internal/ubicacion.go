@@ -10,9 +10,9 @@ type Ubicacion struct {
 	Longitud   float64
 }
 
-func NewUbicacion(provincia string,latitud float64, longitud float64) (Ubicacion, error) {
-	if provincia {
-		return Ubicacion{}, errors.New("provincia son obligatorios")
+func NewUbicacion(provincia string, municipio string, latitud float64, longitud float64) (Ubicacion, error) {
+	if provincia == ""   {
+		return Ubicacion{}, errors.New("provincia, municipio e idEstacion son obligatorios")
 	}
 	if latitud < -90 || latitud > 90 {
 		return Ubicacion{}, errors.New("latitud debe estar entre -90 y 90")
