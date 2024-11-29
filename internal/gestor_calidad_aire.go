@@ -6,7 +6,7 @@ import (
 
 type GestorCalidadAire struct {
 	provincia         string                    
-	datosCalidadAire  map[string][]DatosCalidadAire   
+	datosCalidadAireProvincia  map[string][]DatosCalidadAire   
 	
 }
 

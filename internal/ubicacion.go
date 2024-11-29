@@ -6,14 +6,13 @@ import (
 
 type Ubicacion struct {
 	Provincia  string
-	Municipio  string
 	Latitud    float64
 	Longitud   float64
 }
 
-func NewUbicacion(provincia string, municipio string, latitud float64, longitud float64) (Ubicacion, error) {
-	if provincia == "" || municipio == ""  {
-		return Ubicacion{}, errors.New("provincia, municipio e idEstacion son obligatorios")
+func NewUbicacion(provincia string,latitud float64, longitud float64) (Ubicacion, error) {
+	if provincia {
+		return Ubicacion{}, errors.New("provincia son obligatorios")
 	}
 	if latitud < -90 || latitud > 90 {
 		return Ubicacion{}, errors.New("latitud debe estar entre -90 y 90")
@@ -21,5 +20,5 @@ func NewUbicacion(provincia string, municipio string, latitud float64, longitud 
 	if longitud < -180 || longitud > 180 {
 		return Ubicacion{}, errors.New("longitud debe estar entre -180 y 180")
 	}
-	return Ubicacion{Provincia: provincia, Municipio: municipio, Latitud: latitud, Longitud: longitud}, nil
+	return Ubicacion{Provincia: provincia,  Latitud: latitud, Longitud: longitud}, nil
 }
