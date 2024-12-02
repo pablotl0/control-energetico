@@ -10,7 +10,7 @@ type MuestraCalidadAire struct {
 	Contaminantes map[string]Contaminante
 }
 
-func NewMuestraCalidadAire(fechaInicial *Fecha, contaminantes []Contaminante) (*MuestraCalidadAire, error) {
+func NewMuestraCalidadAire(fechaInicial Fecha, contaminantes []Contaminante) (*MuestraCalidadAire, error) {
 	if len(contaminantes) == 0 {
 		return nil, errors.New("contaminantes no puede estar vacío")
 	}
