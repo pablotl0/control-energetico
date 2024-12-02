@@ -21,5 +21,5 @@ func NewUbicacion(provincia string, municipio string, latitud float64, longitud 
 	if longitud < -180 || longitud > 180 {
 		return nil, errors.New("longitud debe estar entre -180 y 180")
 	}
-	return &Ubicacion{Provincia: provincia,Municipio: municipio  Latitud: latitud, Longitud: longitud}, nil
+	return &Ubicacion{Provincia: provincia,Municipio: municipio,  Latitud: latitud, Longitud: longitud}, nil
 }
