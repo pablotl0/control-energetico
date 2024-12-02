@@ -5,11 +5,7 @@ import (
 	"fmt"
 )
 
-type Fecha struct {
-    Año int
-    Mes int
-    Día int
-}
+
 
 type MuestreoCalidadAire struct {
 	Provincia     string

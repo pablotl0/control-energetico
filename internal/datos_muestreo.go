@@ -1,45 +1,59 @@
 package internal
 
 import (
-	"errors"
-	"time"
+    "errors"
+    "fmt"
 )
 
-type MuestraCalidadAire struct {
-	FechaInicial  time.Time               
-	Contaminantes map[string]Contaminante 
+type Fecha struct {
+    Año int
+    Mes int
+    Día int
 }
 
 var (
-	fechaMinima = time.Date(2000, 1, 1, 0, 0, 0, 0, time.UTC)
-	fechaMaxima = time.Now().Add(time.Hour)
+	fechaActual = time.Now().UTC()
+    fechaMinima = Fecha{
+		Año: fechaActual.AddDate(0, 0, -1).Year(),  
+		Mes: int(fechaActual.AddDate(0, 0, -1).Month()),
+		Día: fechaActual.AddDate(0, 0, -1).Day(),
+	}
+
+	fechaMaxima = Fecha{
+		Año: fechaActual.Year(),
+		Mes: int(fechaActual.Month()),
+		Día: fechaActual.Day(),
+	}
 )
 
-func NewMuestraCalidadAire(fechaInicial time.Time, contaminantes []Contaminante) (*MuestraCalidadAire, error) {
-	fechaInicial = time.Date(fechaInicial.Year(), fechaInicial.Month(), fechaInicial.Day(), 0, 0, 0, 0, time.UTC)
+func NewMuestraCalidadAire(fechaInicial Fecha, contaminantes []Contaminante) (*MuestraCalidadAire, error) {
+    if fechaInicial.Año < fechaMinima.Año || (fechaInicial.Año == fechaMinima.Año && fechaInicial.Mes < fechaMinima.Mes) ||
+        (fechaInicial.Año == fechaMinima.Año && fechaInicial.Mes == fechaMinima.Mes && fechaInicial.Día < fechaMinima.Día) {
+        return nil, errors.New("la fecha inicial debe estar después del 1 de enero de 2000")
+    }
 
-	if fechaInicial.Before(fechaMinima) || fechaInicial.After(fechaMaxima) {
-		return nil, errors.New("la fecha inicial debe estar entre el año 2000 y el presente")
-	}
+    if fechaInicial.Año > fechaMaxima.Año || (fechaInicial.Año == fechaMaxima.Año && fechaInicial.Mes > fechaMaxima.Mes) ||
+        (fechaInicial.Año == fechaMaxima.Año && fechaInicial.Mes == fechaMaxima.Mes && fechaInicial.Día > fechaMaxima.Día) {
+        return nil, errors.New("la fecha inicial no puede estar en el futuro")
+    }
 
+    if len(contaminantes) == 0 {
+        return nil, errors.New("contaminantes no puede estar vacío")
+    }
 
-	if len(contaminantes) == 0 {
-		return nil, errors.New("contaminantes no puede estar vacío")
-	}
+    contaminantesMap := make(map[string]Contaminante)
+    for _, contaminante := range contaminantes {
+        if contaminante.MagnitudUnidad.Magnitud == "" {
+            return nil, errors.New("cada contaminante debe tener una magnitud")
+        }
+        if _, exists := contaminantesMap[contaminante.MagnitudUnidad.Magnitud]; exists {
+            return nil, errors.New("no se pueden duplicar magnitudes en los contaminantes")
+        }
+        contaminantesMap[contaminante.MagnitudUnidad.Magnitud] = contaminante
+    }
 
-	contaminantesMap := make(map[string]Contaminante)
-	for _, contaminante := range contaminantes {
-		if contaminante.MagnitudUnidad.Magnitud == "" {
-			return nil, errors.New("cada contaminante debe tener una magnitud")
-		}
-		if _, exists := contaminantesMap[contaminante.MagnitudUnidad.Magnitud]; exists {
-			return nil, errors.New("no se pueden duplicar magnitudes en los contaminantes")
-		}
-		contaminantesMap[contaminante.MagnitudUnidad.Magnitud] = contaminante
-	}
-
-	return &MuestraCalidadAire{
-		FechaInicial:  fechaInicial,
-		Contaminantes: contaminantesMap,
-	}, nil
+    return &MuestraCalidadAire{
+        FechaInicial:  fechaInicial,
+        Contaminantes: contaminantesMap,
+    }, nil
 }
