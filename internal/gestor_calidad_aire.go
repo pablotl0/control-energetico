@@ -8,7 +8,7 @@ type GestorCalidadAire struct {
 	gestorUbicaciones         GestorUbicaciones
 }
 
-func NewGestorCalidadAire(provincia string, datosCalidadAire []MuestreoCalidadAire, gestorUbicaciones GestorUbicaciones) (GestorCalidadAire, error) {
+func NewGestorCalidadAire(provincia string, datosCalidadAire []MuestreoCalidadAire, gestorUbicaciones GestorUbicaciones) (*GestorCalidadAire, error) {
 	if provincia == "" {
 		return nil, errors.New("el nombre de la provincia es obligatorio")
 	}
