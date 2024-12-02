@@ -5,16 +5,14 @@ import (
 	"fmt"
 )
 
-
-
 type MuestreoCalidadAire struct {
-	Provincia     string
-	DatosMuestreo map[Fecha]MuestraCalidadAire 
+	Ubicacion    Ubicacion
+	DatosMuestreo map[Fecha]MuestraCalidadAire
 }
 
-func NewMuestreoCalidadAire(provincia string, datosMuestreo []MuestraCalidadAire) (*MuestreoCalidadAire, error) {
-	if provincia == "" {
-		return nil, errors.New("la provincia es obligatoria")
+func NewMuestreoCalidadAire(ubicacion Ubicacion, datosMuestreo []MuestraCalidadAire) (*MuestreoCalidadAire, error) {
+	if ubicacion.Provincia == "" || ubicacion.Municipio =="" {
+		return nil, errors.New("la provinciay municipio es obligatorio")
 	}
 	if len(datosMuestreo) == 0 {
 		return nil, errors.New("debe haber al menos un dato de muestreo")
@@ -37,7 +35,7 @@ func NewMuestreoCalidadAire(provincia string, datosMuestreo []MuestraCalidadAire
 	}
 
 	return &MuestreoCalidadAire{
-		Provincia:     provincia,
+		Ubicacion:    ubicacion,
 		DatosMuestreo: datosMap,
 	}, nil
 }
