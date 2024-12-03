@@ -3,11 +3,11 @@ package internal
 import "errors"
 
 type GestorCalidadAire struct {
-	datosCalidadAireProvincia map[string][]MuestreoCalidadAire
+	datosCalidadAireProvincia map[string][]CalidadAireUbicacion
 	gestorUbicaciones         GestorUbicaciones
 }
 
-func NewGestorCalidadAire(datosCalidadAire map[string][]MuestreoCalidadAire, gestorUbicaciones GestorUbicaciones) (*GestorCalidadAire, error) {
+func NewGestorCalidadAire(datosCalidadAire map[string][]CalidadAireUbicacion, gestorUbicaciones GestorUbicaciones) (*GestorCalidadAire, error) {
 	for provincia, muestreos := range datosCalidadAire {
 		ubicaciones, exists := gestorUbicaciones.ubicaciones[provincia]
 		if !exists {
