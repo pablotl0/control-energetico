@@ -3,18 +3,34 @@ package internal
 import "errors"
 
 type GestorCalidadAire struct {
-	datosCalidadAireUbicacion map[Ubicacion][]MuestreoCalidadAire
+	datosCalidadAireProvincia map[string][]MuestreoCalidadAire
+	gestorUbicaciones         GestorUbicaciones
 }
 
-func NewGestorCalidadAire(datosCalidadAire map[Ubicacion][]MuestreoCalidadAire) (*GestorCalidadAire, error) {
-	for ubicacion := range datosCalidadAire {
-		if ubicacion.Provincia == "" || ubicacion.Municipio == ""|| ubicacion.Latitud == 0 || ubicacion.Longitud == 0 {
-			return nil, errors.New("ubicación inválida, la provincia,municipio, latitud y longitud son obligatorios")
+func NewGestorCalidadAire(datosCalidadAire map[string][]MuestreoCalidadAire, gestorUbicaciones GestorUbicaciones) (*GestorCalidadAire, error) {
+	for provincia, muestreos := range datosCalidadAire {
+		ubicaciones, exists := gestorUbicaciones.ubicaciones[provincia]
+		if !exists {
+			return nil, errors.New("la provincia " + provincia + " no existe en el gestor de ubicaciones")
+		}
+
+		for _, muestreo := range muestreos {
+			encontrado := false
+			for _, ubicacion := range ubicaciones {
+				if ubicacion.Municipio == muestreo.Municipio {
+					encontrado = true
+					break
+				}
+			}
+			if !encontrado {
+				return nil, errors.New("el municipio " + muestreo.Municipio + " no existe en la provincia " + provincia + " del gestor de ubicaciones")
+			}
 		}
 	}
 
 	gestor := &GestorCalidadAire{
-		datosCalidadAireUbicacion: datosCalidadAire,
+		datosCalidadAireProvincia: datosCalidadAire,
+		gestorUbicaciones:         gestorUbicaciones,
 	}
 
 	return gestor, nil
