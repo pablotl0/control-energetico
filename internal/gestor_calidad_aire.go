@@ -3,11 +3,11 @@ package internal
 import "errors"
 
 type GestorCalidadAire struct {
-	datosCalidadAireProvincia map[string][]CalidadAireUbicacion
+	datosCalidadAireProvincia map[string][]RegistroCalidadAire
 	ubicaciones               map[string][]Ubicacion
 }
 
-func NewGestorCalidadAire(datosCalidadAire map[string][]CalidadAireUbicacion, ubicaciones []Ubicacion) (*GestorCalidadAire, error) {
+func NewGestorCalidadAire(datosCalidadAire map[string][]RegistroCalidadAire, ubicaciones []Ubicacion) (*GestorCalidadAire, error) {
 	if len(ubicaciones) == 0 {
         return nil, errors.New("debe haber al menos una ubicación")
     }
