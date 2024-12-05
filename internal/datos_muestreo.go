@@ -6,7 +6,6 @@ import (
 )
 
 type MuestraCalidadAire struct {
-	FechaInicial  Fecha
 	Contaminantes map[string]Contaminante
 }
 
