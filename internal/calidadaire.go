@@ -8,10 +8,10 @@ import (
 type RegistroCalidadAire struct {
 	Provincia     string
 	Municipio     string
-	DatosMuestreo map[Fecha][]Contaminante
+	DatosMuestreo map[Fecha][]MuestraContaminante
 }
 
-func NewRegistroCalidadAire(provincia string, municipio string, datosMuestreo []Contaminante, fechas []Fecha) (*RegistroCalidadAire, error) {
+func NewRegistroCalidadAire(provincia string, municipio string, datosMuestreo []MuestraContaminante, fechas []Fecha) (*RegistroCalidadAire, error) {
 	if provincia == "" || municipio == "" {
 		return nil, errors.New("la provincia y el municipio son obligatorios")
 	}
@@ -20,10 +20,10 @@ func NewRegistroCalidadAire(provincia string, municipio string, datosMuestreo []
 	}
 
 	if len(datosMuestreo) != len(fechas) {
-		return nil, errors.New("el número de fechas no coincide con el número de contaminantes")
+		return nil, errors.New("el número de fechas no coincide con el número de muestras de contaminantes")
 	}
 
-	datosMap := make(map[Fecha][]Contaminante)
+	datosMap := make(map[Fecha][]MuestraContaminante)
 
 	for i, fecha := range fechas {
 		if _, exists := datosMap[fecha]; exists {
