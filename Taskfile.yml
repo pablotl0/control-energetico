@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+  check:
+    cmds:
+      - "go build -o /dev/null ./..."
+
+  test:
+    cmds:
+      - "go test ./... -v"
