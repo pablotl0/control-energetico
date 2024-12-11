@@ -25,3 +25,6 @@ La documentación adicional se encuentra en el directorio [`/docs`](./docs/ob0/R
 
 [Milestones](./docs/Milestones.md)
 
+## Gestor de dependencias
+
+[Go Modules](go.mod)
