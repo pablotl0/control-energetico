@@ -28,3 +28,12 @@ La documentación adicional se encuentra en el directorio [`/docs`](./docs/ob0/R
 ## Gestor de dependencias
 
 [Go Modules](https://go.dev/ref/mod)
+
+## Gestor de tareas
+
+[Task](https://taskfile.dev/)
+[Justificacion](./docs/Justificacion_gestor_tareas.md)
+
+## Tareas automatizadas
+- **task check**: verificar la sintaxis del código desarrollado para garantizar que cumple con los estándares y es funcional.  
+- **task test**: ejecutar los tests que se implementarán más adelante para validar el correcto funcionamiento del código y asegurarse de su viabilidad.
