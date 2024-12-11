@@ -27,4 +27,4 @@ La documentación adicional se encuentra en el directorio [`/docs`](./docs/ob0/R
 
 ## Gestor de dependencias
 
-[Go Modules](go.mod)
+[Go Modules](https://go.dev/ref/mod)
