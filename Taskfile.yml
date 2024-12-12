@@ -3,7 +3,7 @@ version: '3'
 tasks:
   check:
     cmds:
-      - "gofmt -e ./internal/..."
+      - "gofmt -e ./internal/.."
 
   test:
     cmds:
