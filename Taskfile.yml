@@ -3,7 +3,7 @@ version: '3'
 tasks:
   check:
     cmds:
-      - "go build -o /dev/null ./..."
+      - "go ftm -e ./internal/..."
 
   test:
     cmds:
