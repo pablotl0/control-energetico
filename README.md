@@ -29,6 +29,8 @@ La documentación adicional se encuentra en el directorio [`/docs`](./docs/ob0/R
 
 [Go Modules](https://go.dev/ref/mod)
 
+Elijo go mod desde Go 1.11, el lenguaje incluye Go Modules como gestor de dependencias integrado. Es el estándar oficial.
+
 ## Gestor de tareas
 
 [Task](https://taskfile.dev/)
