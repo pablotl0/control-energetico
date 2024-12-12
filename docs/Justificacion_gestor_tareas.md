@@ -10,7 +10,6 @@ Para ello vamos a fijarnos en los repositorios de GitHub o páginas web de los p
 Para medirlo analizaremos:
 	- Número de contribuidores
 	- Pull requests abiertos y cerrados
-	- Forks del proyecto
 	- Issues resueltos vs pendientes
 
 - Seguridad: La seguridad es un criterio crucial ya que herramientas de task running tienen acceso directo al código fuente, pueden ejecutar comandos en el sistema y pueden tener acceso a credenciales y configuraciones sensibles.
@@ -58,13 +57,30 @@ De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y 
   - 8 contribuidores.     
   - Varios issues abiertos y cerrados semanalmente al igual que con los pull request. 
 
+5. Just
+
+- Mantenimiento:
+  - Frecuencia de releases: Actualizaciones frecuentes, generalmente cada 1-2 meses.
+- Comunidad :  
+  - 10.5k estrellas en GitHub.
+  - 240 contribuidores.     
+  - Varios issues abiertos y cerrados semanalmente al igual que con los pull request. 
+
+6. Invoke
+
+- Mantenimiento:
+  - Frecuencia de releases: Menor actividad en los últimos tiempos, con lanzamientos cada 1-2 años.
+- Comunidad :  
+  - 3.8k estrellas en GitHub.  
+  - 72 contribuidores.     
+  - Issues abiertos mesualmente mientras que no se cierran issues muy a menudo al igual ocurre con los pull request.
 
 En cuanto al criterio de seguridad hay una diferencia menos significativa:
 
 Seguridad:
 
 Un proyecto bien mantenido y respaldado por una comunidad amplia y  proporciona mayor garantía de seguridad, ya que está en constante evolución para adaptarse a los desafíos y estándares actuales.
-En este caso los proyectos mas grandes y reconocidos como task y make son favorecidos en este aspecto.
+En este caso los proyectos mas grandes y reconocidos como Task, Make y Just son favorecidos en este aspecto.
 
 En cuanto a vulnerabilidades, no hay grandes diferencias entre las distintas opciones. 
 Tras analizar bases de datos que recopilan vulnerabilidades como:
@@ -72,11 +88,12 @@ Tras analizar bases de datos que recopilan vulnerabilidades como:
 - National Vulnerability Database (NVD): https://nvd.nist.gov/.
 - Exploit Database: https://www.exploit-db.com/.
 
-No se han encontrado vulnerabilidades aparentemente en task, mage o goyek. 
+No se han encontrado vulnerabilidades aparentemente en Task, Mage, Goyek, Invoke o Just. 
 Para make se han encontrado alguna vulnerabilidad en versiones antiguas pero no muy relevantes.
 
 
 ## Conclusión
 
-En comparación con otras herramientas, Task destaca por combinar un mantenimiento constante manteniendo al día con las necesidades de los usuarios y las tendencias tecnológicas. Con una comunidad  asegura que el conocimiento, soporte y recursos sobre la herramienta están ampliamente disponibles.
+En comparación con otras herramientas, Task y Just destacan por combinar un mantenimiento constante manteniendo al día con las necesidades de los usuarios y las tendencias tecnológicas. Con unas comunidades que aseguran que el conocimiento, soporte y recursos sobre la herramienta están ampliamente disponibles. 
+Sin embargo, la comunidad de task está enfocada en Go y las actualizaciones frecuentes aseguran mejor soporte y adaptabilidad. Aunque Just es sólido, Task es más adecuado para automatización avanzada en este ecosistema.
 Por ello elijo el gestor de tareas Task.
