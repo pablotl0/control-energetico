@@ -8,14 +8,11 @@ Para ello vamos a fijarnos en los repositorios de GitHub o páginas web de los p
 
 - Comunidad: Una comunidad  asegura soporte a largo plazo, resolución rápida de problemas y mejoras continuas.
 Para medirlo analizaremos:
-	- Número de contribuidores
-	- Pull requests abiertos y cerrados
-	- Issues resueltos vs pendientes
+	- Número de contribuidores 
 
 - Seguridad: La seguridad es un criterio crucial ya que herramientas de task running tienen acceso directo al código fuente, pueden ejecutar comandos en el sistema y pueden tener acceso a credenciales y configuraciones sensibles.
 Los aspectos a evaluar para la seguridad:
 	- Tiempo promedio de respuesta a issues 
-	- Vulnerabilidades del código
 
 
 ## Análisis de criterios
@@ -29,15 +26,13 @@ De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y 
 - Comunidad :  
   - 4.2k estrellas en GitHub.  
   - 76 contribuidores.  
-  - Issues abiertos mesualmente mientras que no se cierran issues muy a menudo al igual ocurre con los pull request.
-
 
 2. Make
 
 - Mantenimiento: 
   - Frecuencia de releases: Aproximadamente cada 1-2 años.  
 - Comunidad :  
-  - Gran comunidad  con muchas conversaciones donde aprender sobre makefile.  
+  - Comunidad con conversaciones donde aprender sobre makefile debido a su extendido uso.  
 
 3. Task
 
@@ -46,7 +41,6 @@ De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y 
 - Comunidad :  
   - 11.6k estrellas en GitHub.  
   - 190 contribuidores.  
-  - Varios issues abiertos y cerrados semanalmente al igual que con los pull request.  
 
 4. Goyek
 
@@ -55,7 +49,6 @@ De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y 
 - Comunidad :  
   - 300 estrellas en GitHub.  
   - 8 contribuidores.     
-  - Varios issues abiertos y cerrados semanalmente al igual que con los pull request. 
 
 5. Just
 
@@ -64,7 +57,6 @@ De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y 
 - Comunidad :  
   - 10.5k estrellas en GitHub.
   - 240 contribuidores.     
-  - Varios issues abiertos y cerrados semanalmente al igual que con los pull request. 
 
 6. Invoke
 
@@ -73,7 +65,6 @@ De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y 
 - Comunidad :  
   - 3.8k estrellas en GitHub.  
   - 72 contribuidores.     
-  - Issues abiertos mesualmente mientras que no se cierran issues muy a menudo al igual ocurre con los pull request.
 
 En cuanto al criterio de seguridad hay una diferencia menos significativa:
 
@@ -81,15 +72,6 @@ Seguridad:
 
 Un proyecto bien mantenido y respaldado por una comunidad amplia y  proporciona mayor garantía de seguridad, ya que está en constante evolución para adaptarse a los desafíos y estándares actuales.
 En este caso los proyectos mas grandes y reconocidos como Task, Make y Just son favorecidos en este aspecto.
-
-En cuanto a vulnerabilidades, no hay grandes diferencias entre las distintas opciones. 
-Tras analizar bases de datos que recopilan vulnerabilidades como:
-- CVE Details (Common Vulnerabilities and Exposures):https://www.cvedetails.com/.
-- National Vulnerability Database (NVD): https://nvd.nist.gov/.
-- Exploit Database: https://www.exploit-db.com/.
-
-No se han encontrado vulnerabilidades aparentemente en Task, Mage, Goyek, Invoke o Just. 
-Para make se han encontrado alguna vulnerabilidad en versiones antiguas pero no muy relevantes.
 
 
 ## Conclusión
