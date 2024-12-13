@@ -11,8 +11,6 @@ Para ello vamos a fijarnos en los repositorios de GitHub:
 	- Número de contribuidores 
 
 - Seguridad: La seguridad es un criterio crucial ya que herramientas de task running tienen acceso directo al código fuente, pueden ejecutar comandos en el sistema y pueden tener acceso a credenciales y configuraciones sensibles.
-Los aspectos a evaluar para la seguridad:
-	- Tiempo promedio de respuesta a issues 
 
 
 ## Análisis de criterios
