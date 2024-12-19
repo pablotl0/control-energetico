@@ -2,59 +2,19 @@
 
 Los criterios de elección de la herramienta que voy a trabajar son:
 
-- Mantenimiento: Si elegimos una herramienta que no se mantiene más adelante se tendrá que sustituir por otra herramienta, con  lo que ello conlleva (pérdida de tiempo y pérdida de dinero). 
-Para ello vamos a fijarnos en los repositorios de GitHub o páginas web de los proyectos para encontrar: 
-	- Frecuencia de releases
-
-- Comunidad: Una comunidad  asegura soporte a largo plazo, resolución rápida de problemas y mejoras continuas.
-Para ello vamos a fijarnos en los repositorios de GitHub:
-	- Número de contribuidores 
+- Mantenimiento: Si elegimos una herramienta que no se mantiene más adelante se tendrá que sustituir por otra herramienta, con lo que ello conlleva (pérdida de tiempo y pérdida de dinero). Una herramienta consolidada, no es necesario que dependa de actualizaciones constantes al estar durante un largo periodo de tiempo siendo testeada. 
 
 ## Análisis de criterios
 
-De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y comunidad donde el desempeño de los gestores es:
+Las herramientas que considero son :
+- Mage
+- Task 
+- Goyek
+- Make 
+- Just
 
-1. Mage
-
-- Mantenimiento:
-  - Frecuencia de releases: Aproximadamente cada 6-8 meses.  
-- Comunidad :  
-  - 4.2k estrellas en GitHub.  
-  - 76 contribuidores.  
-
-2. Make
-
-- Mantenimiento: 
-  - Frecuencia de releases: Aproximadamente cada 1-2 años.  
-- Comunidad :  
-  - Comunidad con conversaciones donde aprender sobre makefile debido a su extendido uso.  
-
-3. Task
-
-- Mantenimiento:   
-  - Frecuencia de releases alta, con actualizaciones menores constantes cada 1-3 meses.  
-- Comunidad :  
-  - 11.6k estrellas en GitHub.  
-  - 190 contribuidores.  
-
-4. Goyek
-
-- Mantenimiento:
-  - Frecuencia de releases: Pocas versiones últimamente, su frecuencia es anual.
-- Comunidad :  
-  - 300 estrellas en GitHub.  
-  - 8 contribuidores.     
-
-5. Just
-
-- Mantenimiento:
-  - Frecuencia de releases: Actualizaciones frecuentes, generalmente cada 1-2 meses.
-- Comunidad :  
-  - 10.5k estrellas en GitHub.
-  - 240 contribuidores.     
+Todas las herramientas elegidas están mantenidas a dia de hoy. Make es una elección que consolidada que no requiere actualizaciones, mietras que el resto de herramientas más modernas requieren de mayor atención por la falta tiempo habiando sido probadas
 
 ## Conclusión
 
-En comparación con otras herramientas, Task y Just destacan por combinar un mantenimiento constante manteniendo al día con las necesidades de los usuarios y las tendencias tecnológicas. Con unas comunidades que aseguran que el conocimiento, soporte y recursos sobre la herramienta están ampliamente disponibles. 
-Sin embargo, la comunidad de task está enfocada en Go y las actualizaciones frecuentes aseguran mejor soporte y adaptabilidad. Aunque Just es sólido, Task es más adecuado para automatización avanzada en este ecosistema.
-Por ello elijo el gestor de tareas Task.
+Aunque herramientas más modernas como Mage, Task, o Just estan desarolladas segun tecnologias mas modernas, Make destaca por su experiencia. Elijo Make por su gran comunidad que garantiza muchos recursos y soluciones a problemas conocidos, al haber sido usada durante un muchos años.
