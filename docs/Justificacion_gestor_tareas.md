@@ -10,9 +10,6 @@ Para ello vamos a fijarnos en los repositorios de GitHub o páginas web de los p
 Para ello vamos a fijarnos en los repositorios de GitHub:
 	- Número de contribuidores 
 
-- Seguridad: La seguridad es un criterio crucial ya que herramientas de task running tienen acceso directo al código fuente, pueden ejecutar comandos en el sistema y pueden tener acceso a credenciales y configuraciones sensibles.
-
-
 ## Análisis de criterios
 
 De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y comunidad donde el desempeño de los gestores es:
@@ -55,22 +52,6 @@ De los criterios anteriores hay mayor diferencia en la parte de mantenimiento y 
 - Comunidad :  
   - 10.5k estrellas en GitHub.
   - 240 contribuidores.     
-
-6. Invoke
-
-- Mantenimiento:
-  - Frecuencia de releases: Menor actividad en los últimos tiempos, con lanzamientos cada 1-2 años.
-- Comunidad :  
-  - 3.8k estrellas en GitHub.  
-  - 72 contribuidores.     
-
-En cuanto al criterio de seguridad hay una diferencia menos significativa:
-
-Seguridad:
-
-Un proyecto bien mantenido y respaldado por una comunidad amplia y  proporciona mayor garantía de seguridad, ya que está en constante evolución para adaptarse a los desafíos y estándares actuales.
-En este caso los proyectos mas grandes y reconocidos como [Task](https://github.com/go-task/task) y [Just](https://github.com/casey/just )son favorecidos en este aspecto.
-
 
 ## Conclusión
 
