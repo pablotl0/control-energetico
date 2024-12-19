@@ -33,9 +33,9 @@ Elijo go mod desde Go 1.11, el lenguaje incluye Go Modules como gestor de depend
 
 ## Gestor de tareas
 
-[Task](https://taskfile.dev/)
+[Make](https://www.gnu.org/software/make/)
 [Justificacion](./docs/Justificacion_gestor_tareas.md)
 
 ## Tareas automatizadas
-- **task check**: verificar la sintaxis del código desarrollado para garantizar que cumple con los estándares y es funcional.  
-- **task test**: ejecutar los tests que se implementarán más adelante para validar el correcto funcionamiento del código y asegurarse de su viabilidad.
+- **make check**: verificar la sintaxis del código desarrollado para garantizar que cumple con los estándares y es funcional.  
+- **make test**: ejecutar los tests que se implementarán más adelante para validar el correcto funcionamiento del código y asegurarse de su viabilidad.
