@@ -13,6 +13,8 @@ Las herramientas que considero son :
 - [Goyek](https://github.com/goyek/goyek)
 - [Make](https://www.gnu.org/software/make/) 
 - [Just](https://github.com/casey/just)
+- [Gotaskr](https://github.com/Roemer/gotaskr)
+- [Taskrunner](https://github.com/samsarahq/taskrunner)
 
 Todas las herramientas segun el criterio han sido actualizadas en el ultimo año. 
 Make es una elección que consolidada que no requiere de actualizaciones, mietras que el resto de herramientas más modernas requieren de mayor atención por la falta de pruebas a lo largo del tiempo.
