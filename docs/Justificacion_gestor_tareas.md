@@ -8,11 +8,11 @@ Los criterios de elección de la herramienta que voy a trabajar son:
 ## Análisis de criterios
 
 Las herramientas que considero son :
-- Mage
-- Task 
-- Goyek
-- Make 
-- Just
+- [Mage](https://github.com/magefile/mage)
+- [Task](https://github.com/go-task/task) 
+- [Goyek](https://github.com/goyek/goyek)
+- [Make](https://www.gnu.org/software/make/) 
+- [Just](https://github.com/casey/just)
 
 Todas las herramientas segun el criterio han sido actualizadas en el ultimo año. 
 Make es una elección que consolidada que no requiere de actualizaciones, mietras que el resto de herramientas más modernas requieren de mayor atención por la falta de pruebas a lo largo del tiempo.
