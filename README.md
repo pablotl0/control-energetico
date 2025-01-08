@@ -25,3 +25,17 @@ La documentación adicional se encuentra en el directorio [`/docs`](./docs/ob0/R
 
 [Milestones](./docs/Milestones.md)
 
+## Gestor de dependencias
+
+[Go Modules](https://go.dev/ref/mod)
+
+Elijo go mod desde Go 1.11, el lenguaje incluye Go Modules como gestor de dependencias integrado. Es el estándar oficial.
+
+## Gestor de tareas
+
+[Make](https://www.gnu.org/software/make/)
+[Justificacion](./docs/Justificacion_gestor_tareas.md)
+
+## Tareas automatizadas
+- **make check**: verificar la sintaxis del código desarrollado para garantizar que cumple con los estándares y es funcional.  
+- **make test**: ejecutar los tests que se implementarán más adelante para validar el correcto funcionamiento del código y asegurarse de su viabilidad.
