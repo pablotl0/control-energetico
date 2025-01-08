@@ -1,24 +1,36 @@
 ## Criterios
 
-Los criterios de elección de la herramienta que voy a trabajar son:
-
-- Madurez: Una herramienta consolidada, no es necesario que dependa de actualizaciones constantes al estar durante un largo periodo de tiempo siendo testeada. 
+Elcriterio de elección de la herramienta que voy a trabajar es:
+ 
+- Tiempo de ejecución de la tarea "gofmt -e ./internal/.." en mi proyecto.
 
 ## Análisis de criterios
 
 Las herramientas que considero son :
-- [Mage](https://github.com/magefile/mage)
-- [Task](https://github.com/go-task/task) 
-- [Goyek](https://github.com/goyek/goyek)
-- [Make](https://www.gnu.org/software/make/) 
-- [Just](https://github.com/casey/just)
-- [Gotaskr](https://github.com/Roemer/gotaskr)
-- [Taskrunner](https://github.com/samsarahq/taskrunner)
+### [Mage](https://github.com/magefile/mage)  
+- Tiempo de ejecución: 0.723s.  
 
-De todas las herramientas consultadas Make es una elección consolidada que cumple con el criterio de madurez, siendo la herramienta más longeva de todas las analizadas.
-El resto de herramientas, más modernas, necesitan mayor atención al no ser herramientas estables. 
-Estas requieren actualizaciones para mantener su comportamiento correctamente, lo que hace que no cumplan con el criterio de madurez.
+### [Task](https://github.com/go-task/task)  
+- Tiempo de ejecución: 0.324s.
+
+### [Goyek](https://github.com/goyek/goyek)  
+- Tiempo de ejecución: 0.824s. 
+
+### [Make](https://www.gnu.org/software/make/)  
+- Tiempo de ejecución: 0.068s, el más rápido entre todas las herramientas.   
+
+### [Just](https://github.com/casey/just)  
+- Tiempo de ejecución: 0.091s, similar al de Make. 
+
+### [Gotaskr](https://github.com/Roemer/gotaskr) 
+- Tiempo de ejecución: 0.861s.
+
+### [Taskrunner](https://github.com/samsarahq/taskrunner)  
+- Tiempo de ejecución: 0.903s.
 
 ## Conclusión
 
-Aunque herramientas más modernas como Mage, Task, o Just están desarolladas segun tecnologias mas recientes, Make destaca por su experiencia. Elijo Make por cumplir con el criterio de madurez. Además cuenta con una gran comunidad que garantiza muchos recursos y soluciones a problemas conocidos, al haber sido usada durante muchos años.
+Tras considerar el criterio de Tiempo de ejecución, Make es la herramienta que mejor cumple. Por otra parte just tiende un rendimiento casi idéntico y la siguiente más cercana a estas es task. El resto de herramientas las descartaré al tener un tiempo de ejecución mayor.
+
+Make es una herramienta muy consolidada, con décadas de uso y además tiene un gran tiempo de ejecución en mi proyecto por lo que es una opción excelente.
+Task y Just son opciones eficientes pero su trayectoria menor las hace más dependientes de actualizaciones y soporte en evolución. Por tanto, elijo Make por la estabilidad que ofrece.
